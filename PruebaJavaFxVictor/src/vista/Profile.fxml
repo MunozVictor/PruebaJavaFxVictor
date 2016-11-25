@@ -75,6 +75,9 @@
                <GridPane.margin>
                   <Insets bottom="5.0" right="10.0" />
                </GridPane.margin>
+               <effect>
+                  <DropShadow height="26.93" radius="12.225" spread="0.22" width="23.97" />
+               </effect>
             </ImageView>
          </children>
       </GridPane>

@@ -23,7 +23,7 @@ public class MainFx extends Application {
 	/**
 	 * Main launch arguments
 	 * 
-	 * @param args
+	 * @param args The arguments
 	 */
 	public static void main(String[] args) {
 		launch(args);
