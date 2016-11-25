@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
@@ -46,7 +47,7 @@
          <children>
             <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <Label styleClass="label-header" text="My Profile" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                  <Label styleClass="label-header" stylesheets="@mystylesheet.css" text="My Profile" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
                   <ImageView fitHeight="150.0" fitWidth="151.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                      <image>
                         <Image url="@images/profilephoto.png" />

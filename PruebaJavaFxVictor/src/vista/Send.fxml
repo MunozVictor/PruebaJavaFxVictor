@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.ControlJavaFx">
    <children>
       <GridPane layoutX="100.0" layoutY="198.0" prefHeight="500.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
@@ -18,10 +18,13 @@
           <RowConstraints maxHeight="331.0" minHeight="10.0" prefHeight="331.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ImageView fitHeight="331.0" fitWidth="332.0" opacity="0.38" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <ImageView fitHeight="331.0" fitWidth="332.0" opacity="0.38" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@images/profilephoto.png" />
                </image>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
             </ImageView>
             <VBox alignment="CENTER" prefHeight="146.0" prefWidth="400.0" styleClass="background" stylesheets="@mystylesheet.css" GridPane.halignment="CENTER">
                <children>
@@ -84,6 +87,11 @@
                      <GridPane.margin>
                         <Insets right="15.0" />
                      </GridPane.margin></TextArea>
+                  <Button mnemonicParsing="false" onMouseClicked="#handleClose" stylesheets="@mystylesheet.css" text="Bye!" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" right="15.0" />
+                     </GridPane.margin>
+                  </Button>
                </children>
             </GridPane>
          </children>
