@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@mystylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@mystylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.ControlJavaFx">
    <top>
       <AnchorPane prefHeight="53.0" prefWidth="600.0" styleClass="background" BorderPane.alignment="CENTER">
          <children>
@@ -17,7 +17,7 @@
                   <Image url="@images/github_white.png" />
                </image>
             </ImageView>
-            <Button layoutX="274.0" layoutY="40.0" mnemonicParsing="false" prefHeight="104.0" prefWidth="600.0" text="View in GitHub" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="10.0">
+            <Button layoutX="274.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#closeStage" prefHeight="104.0" prefWidth="600.0" text="View in GitHub" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="10.0">
                <padding>
                   <Insets left="50.0" right="50.0" />
                </padding>
@@ -67,7 +67,7 @@
                   </VBox>
                </children>
             </VBox>
-            <ImageView fitHeight="65.0" fitWidth="66.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+            <ImageView fitHeight="65.0" fitWidth="66.0" onMouseClicked="#handleSend" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@images/send.png" />
                </image>

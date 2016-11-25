@@ -6,6 +6,10 @@
     -fx-font-size: 11pt;
     -fx-text-fill: black;
 }
+.label-profile {
+    -fx-font-size: 11pt;
+    -fx-text-fill: white;
+}
 .label-italic{
     -fx-font-size: 11pt;
     -fx-text-fill: black;

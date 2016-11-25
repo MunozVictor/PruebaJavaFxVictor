@@ -16,7 +16,7 @@ public class ControlJavaFx {
         try {
             // Load the fxml file and create a new stage for the popup.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainFx.class.getResource("vista/Send.fxml"));
+            loader.setLocation(MainFx.class.getResource("../vista/Send.fxml"));
             AnchorPane page = (AnchorPane) loader.load();
             Stage sendStage = new Stage();
             sendStage.setTitle("Edit profile");
@@ -36,6 +36,7 @@ public class ControlJavaFx {
 	
     /**
      * Method to handle the AnchorPane action in the Main stage 
+     * @see sendStage
      */
     
     @FXML
